@@ -30,7 +30,7 @@ function Button(props) {
     );
   }
 
-  return <Wrapper disabled={props.disabled}>{button}</Wrapper>;
+  return <Wrapper>{button}</Wrapper>;
 }
 
 Button.propTypes = {
@@ -38,7 +38,6 @@ Button.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
-  disabled: PropTypes.bool,
 };
 
 export default Button;
